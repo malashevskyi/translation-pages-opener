@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Translation pages",
+  "version": "1.0.0",
+  "description": "Open a word in different traslation pages",
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "192": "favicon-192x192.png",
+    "512": "favicon-512x512.png"
+  },
+  "permissions": [
+    "identity",
+    "tabs",
+    "activeTab",
+    "storage",
+    "notifications",
+    "contextMenus",
+    "extension",
+    "http://*/*",
+    "https://*/*",
+    "file:///*/*"
+  ],
+  "externally_connectable": {
+    "matches": ["http://*/*", "https://*/*", "file:///*/*"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
